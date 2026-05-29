@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Focus Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <p class="eyebrow">Focus Session</p>
+    <h1>Pomodoro Timer</h1>
+    <p class="subtitle">Stay focused for 25 minutes, then take a small break.</p>
+  </header>
+
+  <main class="app">
+    <section class="timer-card" aria-label="Pomodoro timer">
+      <div class="top-row">
+        <p id="modeText" class="mode-text">Focus Time</p>
+        <button id="themeBtn" class="icon-btn" type="button">🌙</button>
+      </div>
+
+      <div class="timer-circle">
+        <p id="timerDisplay">25:00</p>
+      </div>
+
+      <p id="statusText" class="status-text">Ready to start ✨</p>
+
+      <div class="controls">
+        <button id="startBtn" type="button">Start</button>
+        <button id="pauseBtn" type="button">Pause</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+
+      <div class="settings">
+        <button id="focusBtn" type="button">Focus 25 min</button>
+        <button id="breakBtn" type="button">Break 5 min</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Simple JavaScript project with state, DOM changes and localStorage.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
